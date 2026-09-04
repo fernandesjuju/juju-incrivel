@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelagem Matemática e Programação | Guia do Trabalho e Simulação</title>
+    <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer> </script>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <span class="badge">Documentação &bull; Matemática II &bull; Alura</span>
+            <h1>Modelagem Matemática e Programação</h1>
+            <p>O Uso de Algoritmos na Inovação Tecnológica: Guia Teórico, Estrutura e Aplicação Prática</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- SEÇÃO 1: INTRODUÇÃO DO TRABALHO -->
+        <section class="card">
+            <h2>1. Introdução do Trabalho</h2>
+            <p class="lead">A era digital moderna é sustentada por uma base invisível, porém robusta: a união entre a matemática e a programação.</p>
+            <div class="grid-2">
+                <div>
+                    <h3>Contextualização</h3>
+                    <p>Conceitos abstratos como cálculo, estatística, progressões e equações diferenciais deixaram de ser apenas teorias acadêmicas para se tornarem o motor de inovações como inteligência artificial, criptografia e modelagem de sistemas dinâmicos.</p>
+                </div>
+                <div>
+                    <h3>Objetivo</h3>
+                    <p>Demonstrar a aplicação prática de conceitos de Matemática II por meio de um algoritmo desenvolvido em JavaScript, resolvendo um problema de simulação de sistemas complexos (como o modelo de propagação exponencial estocástica).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: EXPLICAÇÃO DE COMO O SITE FOI FEITO -->
+        <section class="card">
+            <h2>2. Explicação da Atividade: Como o Site Foi Desenvolvido</h2>
+            <p>Para transformar a proposta teórica em um projeto funcional, interativo e visualmente moderno, a atividade foi estruturada utilizando os padrões fundamentais da web separados em dois arquivos principais:</p>
+
+            <div class="theory-grid" style="margin-top: 1.5rem;">
+                <div class="theory-item">
+                    <div class="theory-icon">📄</div>
+                    <h4>O Arquivo `index.html`</h4>
+                    <p>Atua como o esqueleto e a semântica da página. Ele organiza o conteúdo textual em blocos lógicos (`<header>`, `<main>`, `<section>`) e estrutura o painel interativo com inputs numéricos e botões de disparo.</p>
+                </div>
+                <div class="theory-item">
+                    <div class="theory-icon">🎨</div>
+                    <h4>O Arquivo `style.css`</h4>
+                    <p>Controla toda a identidade visual, tipografia e responsividade. Utiliza variáveis globais, flexbox/grid e efeitos de transição para garantir uma experiência limpa, moderna e adaptável a qualquer tela.</p>
+                </div>
+            </div>
+
+            <div class="info-box" style="margin-top: 2rem;">
+                <h4>Arquitetura Lógica (JavaScript Embutido):</h4>
+                <p>O script captura parâmetros de entrada do usuário, processa equações de progressão geométrica estocástica utilizando laços de repetição (`for`) e manipula o DOM para exibir os resultados da simulação em tempo real.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: LABORATÓRIO PRÁTICO -->
+        <section class="card">
+            <h2>3. Laboratório Prático de Simulação</h2>
+            <p>Teste o algoritmo desenvolvido para este trabalho diretamente no navegador:</p>
+            
+            <div class="interactive-panel">
+                <div class="controls-grid">
+                    <div class="control-group">
+                        <label for="nucleos">Núcleos Iniciais:</label>
+                        <input type="number" id="nucleos" value="5" min="1" max="50">
+                    </div>
+                    <div class="control-group">
+                        <label for="taxa">Taxa de Reação (Média):</label>
+                        <input type="number" id="taxa" value="2.2" step="0.1" min="1.0" max="5.0">
+                    </div>
+                    <div class="control-group">
+                        <label for="geracoesInput">Total de Gerações:</label>
+                        <input type="number" id="geracoesInput" value="8" min="3" max="15">
+                    </div>
+                </div>
+
+                <button id="btn-simular" class="btn-primary">Executar Simulação Computacional</button>
+
+                <div id="resultado-container" class="result-box hidden">
+                    <h4>Resultados da Simulação:</h4>
+                    <div id="resultado-texto"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Trabalho Acadêmico de Matemática II &bull; Documentação e Aplicação Web</p>
+        </div>
+    </footer>
+
+   
+</body>
+</html>
